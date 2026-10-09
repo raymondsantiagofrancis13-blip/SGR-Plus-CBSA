@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "SGR+ V2 — Assistant granulométrique",
+  "short_name": "SGR+ V2",
+  "description": "Assistant granulométrique SGR+ V2",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07101f",
+  "theme_color": "#07101f",
+  "icons": [
+    {"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
