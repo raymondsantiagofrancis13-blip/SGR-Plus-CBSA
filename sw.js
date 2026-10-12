@@ -1,5 +1,5 @@
-const CACHE='sgr-plus-20261012-hof-rond-logo';
-const ASSETS=['./','./index.html','./manifest.webmanifest?v=20261012-hof-rond','./icon-192.png?v=20261012-hof-rond','./icon-512.png?v=20261012-hof-rond'];
+const CACHE='sgr-plus-20261012-logo-lisible-logo';
+const ASSETS=['./','./index.html','./manifest.webmanifest?v=20261012-logo-lisible','./icon-192.png?v=20261012-logo-lisible','./icon-512.png?v=20261012-logo-lisible'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE && /^(sgr|SGR)/.test(key)).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',event=>{
